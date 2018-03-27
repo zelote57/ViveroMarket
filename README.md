@@ -1,2 +1,2 @@
 # ViveroMarket
-An asp.net web site with shopingcar and gallery of products
+An asp.net web site with shoppingcar and gallery of products
