@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="cotiza.master.cs" Inherits="cotiza" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Cotización - ViveroMarket</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="scripts/vmf.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">    
+        <table align="center" width="100%" cellpadding="0" cellspacing="0" class="tabla" >
+            <tr>
+                <td colspan="1" style="width: 150px; height: 16px; background-color: #313131">
+                </td>
+                <td colspan="1" style="width: 82px; height: 16px; background-color: #313131">
+                </td>
+                <td colspan="3" style="height: 16px; background-color: #313131">
+                    <div class="fecha">
+                    <asp:Label ID="lblFecha" runat="server" OnLoad="Page_Load" Text="dd/mm/aa" ForeColor="Gainsboro"></asp:Label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="4" style="width: 150px; border-bottom: black thin solid;
+                    height: 24px; background-color: #313131; text-align: center">
+                </td>
+                <td colspan="1" rowspan="4" style="width: 82px; border-bottom: black thin solid;
+                    height: 24px; background-color: #313131; text-align: center">
+                    <img alt="" src="images/logo.png" /></td>
+                <td colspan="3" rowspan="4" style="border-bottom: black thin solid; height: 24px;
+                    background-color: #313131; text-align: left;">
+                    <span style="font-size: 24pt"> <span>&nbsp;Cotizaciones</span></span></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="1" style="width: 150px; border-bottom: black thin solid;
+                    height: 24px; background-color: #4c4c4c; text-align: center">
+                </td>
+                <td colspan="4" rowspan="1" style="border-bottom: black thin solid; height: 24px;
+                    background-color: #4c4c4c; text-align: left">
+                    &nbsp;<asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                    <asp:LinkButton ID="btnCerrarSesion" runat="server" OnClick="btnCerrarSesion_Click" CausesValidation="False" CssClass="close">Cerrar Sesión</asp:LinkButton>
+                    | <a href="swvmphome01.aspx">Home</a></td>
+            </tr>
+        </table>    
+        <table align="center" width="850" style="background-color: #4c4c4c" class="tabla">
+            <tr>
+                <td colspan="4">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; height: 645px;" colspan="4" rowspan="10">
+                    <asp:ContentPlaceHolder ID="cphCotiza" runat="server">
+                    </asp:ContentPlaceHolder>
+                    </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

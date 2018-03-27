@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="index.master.cs" Inherits="index" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Vivero Market</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />     
+    <script language="javascript" type="text/javascript" src="scripts/vmf.js"></script>
+    <script type="text/javascript" src="scripts/reflex.js"></script>
+    <script type="text/javascript" src="scripts/corner.js"></script>    
+    <script type="text/javascript" src="slimbox/jquery.min.js"></script>
+    <script type="text/javascript" src="slimbox/slimbox2.js"></script>    
+    <link rel="stylesheet" href="slimbox/slimbox2.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    
+    <table width="940" border="0" align="center" class="tabla">
+  <tr>
+  </tr>
+    <tr>
+    <td colspan="7"class="top" style="height: 6px">&nbsp;<div class="fecha">
+            <asp:Label ID="LabelFecha" runat="server" OnLoad="Page_Load" Text="dd/mm/aa"></asp:Label>&nbsp;</div>
+    </td>
+    </tr>
+  <tr>
+    <td class="left" style="width: 233px; vertical-align: bottom;"></td>
+    <td colspan="6"class="right">
+        <object >                       
+            <param name="movie" value="flash/banner.swf" />
+            <param name="quality" value="high" />
+            <embed src="flash/banner.swf" quality="high" width="707" height="213"></embed> </object></td>
+  </tr>
+    <td rowspan="2"class="izquierda1" style="width: 233px">
+        <asp:Panel ID="pLogin" runat="server" Height="100%" Width="100%">
+            <table style="width: 228px; height: 64px" dir="ltr">
+                <tr>
+                    <td colspan="4" style="height: 16px; text-align: center">
+                        <strong><span style="font-size: 7pt">Iniciar Sesion</span></strong></td>
+                </tr>
+                <tr>
+                    <td style="width: 9px; height: 16px;">
+                    </td>
+                    <td style="width: 106px; height: 16px; text-align: right;">
+                        <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label></td>
+                    <td style="width: 171px; height: 16px;">
+                        <asp:TextBox ID="txtUser" runat="server" Width="130px" onkeyup="this.value=this.value.toLowerCase()" ValidationGroup="ctl00$Login"></asp:TextBox></td>
+                    <td style="width: 4px; height: 16px;">
+                        <asp:RequiredFieldValidator ID="rfvEmail" 
+                        runat="server" ForeColor="Yellow" 
+                        ControlToValidate="txtUser" 
+                        ErrorMessage="Email es obligatorio" 
+                        ValidationGroup="ctl00$Login">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtUser"
+                            ErrorMessage="Formato de Email Invalido" ForeColor="Yellow" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                            ValidationGroup="ctl00$Login">*</asp:RegularExpressionValidator></td>
+                </tr>
+                <tr>
+                    <td style="width: 9px">
+                    </td>
+                    <td style="width: 106px; text-align: right;">
+                        <asp:Label ID="lblClave" runat="server" Text="Contraseña:"></asp:Label></td>
+                    <td style="width: 171px">
+                        <asp:TextBox ID="txtClave" runat="server" TextMode="Password" Width="130px" ValidationGroup="ctl00$Login"></asp:TextBox></td>
+                    <td style="width: 4px">
+                        <asp:RequiredFieldValidator ID="rfvClave" runat="server" ControlToValidate="txtClave"
+                            ErrorMessage="Escriba la contraseña" ForeColor="Yellow" ValidationGroup="ctl00$Login">*</asp:RequiredFieldValidator></td>
+                </tr>
+                <tr>
+                    <td style="width: 9px">
+                    </td>
+                    <td colspan="2" style="text-align: right">
+                        <asp:Button ID="btnAcceder" runat="server" Text="Acceder" OnClick="btnAcceder_Click" ValidationGroup="ctl00$Login" /></td>
+                    <td style="width: 4px">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 9px;">
+                    </td>
+                    <td colspan="2" style="text-align: right;">
+                        <asp:ValidationSummary ID="vsIndex" runat="server" ForeColor="Yellow"
+                            ValidationGroup="ctl00$Login" />
+                        <asp:Label ID="lblError" runat="server" ForeColor="Yellow"></asp:Label></td>
+                    <td style="width: 4px;">
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <table>
+            <tr>
+                <td style="width: 40px">
+                </td>
+                <td style="width: 465px; text-align: center">
+        <asp:Label ID="lblMensaje" runat="server"></asp:Label></td>
+                <td style="width: 45px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40px">
+                </td>
+                <td style="width: 465px; text-align: center">
+                    <asp:LinkButton ID="Status" runat="server" OnClick="Status_Click" Visible="False" ValidationGroup="ctl00$Login" CssClass="cerrarsesion">Cerrar Sesion</asp:LinkButton></td>
+                <td style="width: 45px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 40px">
+                </td>
+                <td style="vertical-align: middle; width: 465px; text-align: center">
+                    <img height="18" src="images/car2.png" width="18" />
+                    <asp:LinkButton ID="lnkCart" runat="server" CausesValidation="False"
+                        EnableTheming="True" PostBackUrl="~/swvmicart05.aspx" CssClass="cart">Ver Carrito de Compras</asp:LinkButton></td>
+                <td style="width: 45px">
+                </td>
+            </tr>
+        </table>
+    </td>
+        
+    <td width="110"class="imagetop"><img src="images/frutal.jpg" width="104" height="104" /></td>
+    <td width="110"class="imagetop"><img src="images/flores.jpg" width="104" height="104" /></td>
+    <td width="110"class="imagetop"><img src="images/medicinal.jpg" width="104" height="104" /></td>
+    <td width="100"class="imagetop"><img src="images/tropical.jpg" width="104" height="104" /></td>
+    <td width="110"class="imagetop"><img src="images/semilla.jpg" width="104" height="104" /></td>
+    <td width="110"class="imagetop"><img src="images/bonsai.jpg" width="104" height="104" /></td>    
+  <tr>
+    <td class="boton" ><a href="swvmpgalery03.aspx?IGP=3">frutales</a></td>
+    <td class="boton"><a href="swvmpgalery03.aspx?IGP=1">flores</a></td>
+    <td class="boton"><a href="swvmpgalery03.aspx?IGP=2">medicinales</a></td>
+    <td class="boton"><a href="swvmpgalery03.aspx?IGP=5">tropicales</a></td>
+    <td class="boton"><a href="swvmpgalery03.aspx?IGP=6">semillas</a></td>
+    <td class="boton"><a href="swvmpgalery03.aspx?IGP=4">bonsai</a></td>
+  </tr>
+  <tr>
+    <td class="izquierda" style="width: 233px; vertical-align: top;">
+        <div id="menu">
+            <asp:Menu ID="MenuPrin" runat="server" BackColor="#313131" DynamicHorizontalOffset="2"
+                Font-Bold="False" Font-Names="Tahoma" Font-Size="14px" ForeColor="White" StaticSubMenuIndent="10px">
+                <StaticSelectedStyle BackColor="DimGray" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicHoverStyle BackColor="#313131" ForeColor="GreenYellow" />
+                <DynamicMenuStyle BackColor="#313131" CssClass="IE8Fix" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/swvmphome01.aspx" Text="  Home" Value="Inicio" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/swvmpsomos02.aspx" Text="  Somos" Value="Somos" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png"></asp:MenuItem>
+                    <asp:MenuItem Text="  Productos" Value="Productos" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png" Selectable="False">
+                        <asp:MenuItem NavigateUrl="~/swvmpgalery03.aspx?IGP=3" Text="Frutales" Value="Frutales"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/swvmpgalery03.aspx?IGP=1" Text="Flores" Value="Flores"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/swvmpgalery03.aspx?IGP=2" Text="Medicinales" Value="Medicinales">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/swvmpgalery03.aspx?IGP=5" Text="Tropicales" Value="Tropicales">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/swvmpgalery03.aspx?IGP=6" Text="Semillas" Value="Semillas"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/swvmpgalery03.aspx?IGP=4" Text="Bonsai" Value="Bonsai"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="  Registro" Value="Registro" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png" NavigateUrl="#" Selectable="False">
+                        <asp:MenuItem NavigateUrl="~/swvmiregcli07.aspx" Text="Clientes" Value="Clientes"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/swvmiregprov08.aspx" Text="Proveedores" Value="Proveedores"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/swvmpservicios09.aspx" Text="  Servicios" Value="Servicios" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/swvmpnoticias10.aspx" Text="  Noticias" Value="Noticias" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/swvmicontactenos11.aspx" Text="  Cont&#225;ctenos" Value="Cont&#225;ctenos" ImageUrl="~/images/1.png" SeparatorImageUrl="~/images/3.png"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            &nbsp;</div>
+    
+       </td>
+    <td colspan="6" class="derecha">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+      </td>
+  </tr>
+  <tr>
+    <td colspan="7" class="inferior" >
+    </td>
+    </tr>
+  <tr >
+    <td colspan="7" class="pie" style="height: 24px" >Derechos Reservados 2010 - <a href="#">Universidad de Guayaquil</a>  | Fac. Analisis de Sistemas</td>
+    </tr>
+</table>
+    </form>
+</body>
+</html>

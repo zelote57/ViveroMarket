@@ -1,0 +1,425 @@
+/*Hoja de estilos CSS para controlar la mauetacion del Sitio We*/
+html {
+	background: #444;
+}
+
+body {
+
+	margin: 0;
+	padding:0;
+	font-family: arial, helvetica, sans-serif;
+	background: #444;
+	font-size: 12px;
+	/*line-height: 1.5em;
+	width: 100%;
+	display: table;*/
+
+}
+
+a:link, a:visited {	color: #fff; text-decoration: none; }
+
+a:active, a:hover { color: #ff0; text-decoration: none; }
+
+.IE8Fix {
+     z-index: 100;
+}
+
+#menu {
+	padding: 20px 0px 0px 10px;	
+}
+
+
+input[type="text"] {
+	background: #E3F6CE;		
+	}
+	
+input[type="password"] {
+	background: #E3F6CE;	
+	}
+
+
+.galery{
+	font-family: tahoma;
+}
+.galery .name{
+	text-transform: capitalize;
+	font-weight:bold;
+}
+
+.galery  span {
+	font-family: arial;
+}
+
+.galery  span.title {
+	font-family: helvetica;
+	font-size:14px;
+	text-transform: capitalize;
+}
+
+.galery  span.detalle{	
+	text-transform: capitalize;
+}
+
+.galery .order {	
+	font-size:11px;
+}
+
+.galery .order a.name{
+	color: #EEEE66;
+}
+
+.galery .order a.name:hover{
+	color: #aaddff;
+	text-decoration: none;
+}
+
+.galery .order a.pmin{
+	color: #FFBB55;
+}
+
+.galery .order a.pmin:hover{
+	color: #aaddff;
+	text-decoration: none;
+}
+
+.galery .order a.pmax{
+	color: #88cc55;
+}
+
+.galery .order a.pmax:hover{
+	color: #aaddff;
+	text-decoration: none;
+}
+
+.galery .detail{
+	text-transform: lowercase;	
+}
+	
+.tabla {
+	font-family: tahoma;
+	font-size:12px;
+	color: #fff;
+}
+
+.tabla a.close{
+	color: #AADDFF;
+	text-decoration: none;
+}
+
+.tabla  a.close:hover{
+	color: #88CC55;
+	text-decoration: none;
+}
+
+.tabla h1 {
+	
+	font-family: tahoma;
+	font-size:	18px;
+	color: #afa;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.tabla p  {
+	
+	font-family: tahoma;
+	font-size:	12px;
+	text-align: justify;
+	color: #fff;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.tabla .regcli{
+	
+	font-family: tahoma;
+	font-size:	15px;
+	text-align: justify;
+	color: #fff;
+	margin: 0 0 0 30px;
+	padding: 0;
+	
+}
+
+.tabla .regcli a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.tabla .regcli a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.tabla h2 {
+	
+	font-family: tahoma;
+	font-size:	12px;
+	color: #afa;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.tabla .cabecera{
+	width: 940px;
+	height: 214px;
+	background: url(images/4.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .top{
+	width: 940px;
+	background: url(images/cabecera_top.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .left{
+	width: 233px;
+	height: 214px;
+	background: url(images/cabecera_left.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .right{
+	width: 707px;
+	height: 214px;
+	margin: 0;
+	padding: 0;	
+}
+
+.tabla  a.rss {
+color:#EEEE66;
+text-decoration:underline;
+}
+
+.tabla  a.rss:hover {
+color:white;
+text-decoration:none;
+}
+
+.tabla .izquierda1{
+	width: 233px;
+	/*min-height: 318px;
+	max-height: 618px;*/
+	background: url(images/fondoizq.jpg);
+	margin: 0;
+	padding: 0;
+}
+
+
+.tabla .izquierda1 a.cart{
+	color: #eeee66;
+	text-decoration: none;
+}
+
+.tabla .izquierda1 a.cart:hover{
+	color: #ffbb55;
+	text-decoration: none;
+}
+
+.tabla .izquierda1 a.cerrarsesion{
+	color: #AADDFF;
+	text-decoration: none;
+}
+
+.tabla .izquierda1 a.cerrarsesion:hover{
+	color: #88CC55;
+	text-decoration: none;
+}
+
+.tabla .izquierda1 a.recovery{
+	color: #AADDFF;
+	text-decoration: none;	
+}
+
+.tabla .izquierda1 a.recovery:hover{
+	color: #88CC55;
+	text-decoration: none;	
+}
+
+.tabla .imagetop {
+	background:#4c4c4c;
+	text-align:center;
+}
+
+.tabla .boton{
+	background: url(images/boton.jpg);
+	height: 37px;
+	font-family: arial;
+	font-weight:bold;
+	letter-spacing: 2px;
+	text-align:center;
+	font-size:12px;
+	color: #fff;
+	text-transform:uppercase;
+}
+
+.tabla .boton a{
+	color: #fff;
+	text-decoration: none;	
+}
+
+.tabla .boton a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.tabla .izquierda{
+	float:left;
+	width: 233px;
+	min-height: 600px;
+	background: url(images/fondoizq.jpg);
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .derecha{
+	background:#4c4c4c;
+	vertical-align: top;
+	margin: 0;
+}
+
+.tabla .derecha a.reg{
+	color: #AADDFF;
+	text-decoration: none;
+}
+
+.tabla .derecha a.reg:hover{
+	color: #88CC55;
+	text-decoration: none;
+}
+
+.tabla .derecha .btnActualizar {
+	background:url(images/btng.gif) repeat-x scroll 0 0 transparent;
+	border:1px solid #C8C8C7;
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-left:5px;
+	padding:2px 13px 3px;
+	text-decoration:none;
+	text-align: center;
+}
+
+.tabla .derecha .btnCotizar  {
+	background: url(images/btno.gif) repeat-x scroll 0 0 transparent;
+	border:1px solid #E6BD66;
+	color:White;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:5px;
+	padding:2px 13px 3px;
+	text-decoration:none;
+	text-align: center;
+}
+
+.tabla .derecha .lkndetails{	
+	text-decoration:none;
+	text-align: center;
+}
+
+.tabla .derecha .lkndetails a{
+	color:#000000;	
+	text-decoration: none;
+}
+
+.tabla .derecha .lkndetails a:hover{
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+.tabla .inferior{
+	background: url(images/inferior.jpg) no-repeat;
+	width: 920px;
+	height: 109px;
+	margin: 0;
+	padding:  10px;	
+}
+
+.tabla .pie{
+	background: #6e9100;
+	padding: 5px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.tabla .pie a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.tabla .pie a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.tabla .cotiza{	
+	background-color:#eeeeee;
+	color: black;
+}
+
+.tabla .cotiza h1{
+	color: black;
+}
+
+.tabla .detalle {
+	font-family: arial;	
+}
+
+.tabla .detalle td.cod{
+	padding:0px 20px 0px 15px;	
+	width: 40px;
+}
+
+.tabla .detalle td.prod{
+	padding:0px 10px 0px 10px;	
+}
+
+.tabla .detalle td.puni{
+	padding:0px 25px 0px 0px;
+	width: 60px;
+}
+
+.tabla .detalle td.tot{
+	padding:0px 25px 0px 0px;
+	width: 60px;
+}
+
+.tabla .btnAceptar {
+	background:url(images/btng.gif) repeat-x scroll 0 0 transparent;
+	border:1px solid #C8C8C7;
+	color:#000000;
+	font-size:11px;
+	font-weight:bold;
+	margin-left:5px;
+	padding:2px 13px 3px;
+	text-decoration:none;
+	text-align: center;
+}
+
+.fecha {
+	color: #EEEE66;
+	text-align: right;	
+	padding: 0px 10px 0px 0px;
+}
+
+.ferror {
+	font-size:12px;
+}
+
+.ferror .rcli {
+	font-size:12px;
+	color: #ff0;
+	text-align: justify;
+}
+
+.cleaner {	
+	clear: both;
+	height: 0px;	
+}

@@ -1,0 +1,426 @@
+/*Hoja de estilos CSS para controlar la maquetación de la administración de ViveroMarket*/
+html {
+	background: #444;
+}
+
+body {
+
+	margin: 0;
+	padding:0;
+	font-family: tahoma;
+	background: #444;
+	font-size:13px;
+	color: #fff;
+	/*line-height: 1.5em;
+	width: 100%;
+	display: table;*/
+
+}
+
+a:link, a:visited {	color: #fff; text-decoration: none; }
+
+a:active, a:hover { color: #ff0; text-decoration: none; }
+/*estilo para menu area de administracion*/
+.menu{
+	font-family: Arial, sans-serif;
+	/*top:150px;*/
+	/*position: absolute;*/
+}
+.menu ul {	
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 150px;    
+    font-size: 9pt;
+}
+.menu ul li {
+    background-color: #666;
+}
+.menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+.menu ul li a:hover {
+    background: #000;
+    border-left: 10px solid #333;
+    color: #fff;
+}
+
+
+input[type="text"] {
+	background: #E3F6CE;
+	}
+	
+input[type="password"] {
+	background: #E3F6CE;	
+	}
+	
+	 
+.btnnew {   
+	background-image:url(images/028.png);
+	background-repeat:no-repeat;	
+	background-position:left;
+	font-family: tahoma;
+	border-width:1px;
+	border-color:black;
+	background-color:#333333;	
+	height: 26px;
+	color: white;
+	cursor:pointer;
+}
+.btnnew:hover {   
+	border-color:#888888;
+}
+.btnnew[disabled] {   
+	filter: alpha(opacity=50); opacity: .5
+}
+.btnnew[disabled]:hover {   
+	border-color:black;
+	cursor:auto;
+}
+.btnrefresh {   
+	background-image:url(images/024.png);
+	background-repeat:no-repeat;	
+	background-position:left;
+	font-family: tahoma;
+	border-width:1px;
+	border-color:black;
+	background-color:#333333;	
+	height: 26px;
+	color: white;
+	cursor:pointer;
+}
+.btnrefresh:hover {   
+	border-color:#888888;
+}
+.btnrefresh[disabled] {   
+	filter: alpha(opacity=50); opacity: .5
+}
+.btnrefresh[disabled]:hover {   
+	border-color:black;
+	cursor:auto;
+}
+
+.btnsave {   
+	background-image:url(images/003.png);
+	background-repeat:no-repeat;	
+	background-position:left;
+	font-family: tahoma;
+	border-width:1px;
+	border-color:black;
+	background-color:#333333;	
+	height: 26px;
+	color: white;
+	cursor:pointer;
+}
+.btnsave:hover {   
+	border-color:#888888;
+}
+.btnsave[disabled] {   
+	filter: alpha(opacity=50); opacity: .5
+}
+.btnsave[disabled]:hover {   
+	border-color:black;
+	cursor:auto;
+}
+
+.btncancel {   
+	background-image:url(images/032.png);
+	background-repeat:no-repeat;	
+	background-position:left;
+	font-family: tahoma;
+	border-width:1px;
+	border-color:black;
+	background-color:#333333;	
+	height: 26px;
+	color: white;
+	cursor:pointer;
+}
+.btncancel:hover {   
+	border-color:#888888;
+}
+.btncancel[disabled] {   
+	filter: alpha(opacity=50); opacity: .5
+}
+.btncancel[disabled]:hover {   
+	border-color:black;
+	cursor:auto;
+}
+
+.btnmodify {   
+	background-image:url(images/017.png);
+	background-repeat:no-repeat;	
+	background-position:left;
+	font-family: tahoma;
+	border-width:1px;
+	border-color:black;
+	background-color:#333333;	
+	height: 26px;
+	color: white;
+	cursor:pointer;
+}
+.btnmodify:hover {   
+	border-color:#888888;
+}
+.btnmodify[disabled] {   
+	filter: alpha(opacity=50); opacity: .5
+}
+.btnmodify[disabled]:hover {   
+	border-color:black;
+	cursor:auto;
+}
+
+.tabla {
+	font-family: tahoma;
+	font-size:13px;
+	color: #fff;
+}
+
+.tabla a.ver{
+color:#007722;
+text-decoration:none;
+cursor:pointer;
+}
+
+.tabla  a.ver:hover {
+color:black;
+text-decoration:none;
+cursor:pointer;
+}
+
+.tabla a.cerrarsesion {
+color:#88CC55;
+text-decoration:none;
+}
+
+.tabla  a.cerrarsesion:hover {
+color:white;
+text-decoration:none;
+}
+
+.tabla a.preview {
+color:#AADDFF;
+text-decoration:none;
+}
+
+.tabla  a.preview:hover {
+color:white;
+text-decoration:none;
+}
+
+.tabla h1 {
+	
+	font-family: tahoma;
+	font-size:	18px;
+	color: #afa;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.tabla p  {
+	
+	font-family: tahoma;
+	font-size:	12px;
+	text-align: justify;
+	color: #fff;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.tabla .regcli{
+	
+	font-family: tahoma;
+	font-size:	15px;
+	text-align: justify;
+	color: #fff;
+	margin: 0 0 0 30px;
+	padding: 0;
+	
+}
+
+.tabla .regcli a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.tabla .regcli a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.tabla h2 {
+	
+	font-family: tahoma;
+	font-size:	12px;
+	color: #afa;
+	margin: 0 0 10px 0;
+	padding: 0;
+	
+}
+
+.tabla .cabecera{
+	width: 940px;
+	height: 214px;
+	background: url(images/4.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .top{
+	width: 940px;
+	background: url(images/cabecera_top.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .left{
+	width: 233px;
+	height: 214px;
+	background: url(images/cabecera_left.jpg) no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .right{
+	width: 707px;
+	height: 214px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.tabla .izquierdaup{
+	/*float:both;*/
+	/*width: 233px;
+	min-height: 580px;
+	background: url(images/fondoizq.jpg);*/
+	margin: 0;
+	padding: 0;	
+}
+
+.tabla .imagetop {
+	background:#4c4c4c;
+	text-align:center;
+}
+
+.tabla .boton{
+	background: url(images/boton.jpg);
+	height: 37px;
+	font-family: arial;
+	font-weight:bold;
+	letter-spacing: 2px;
+	text-align:center;
+	font-size:12px;
+	color: #fff;
+	text-transform:uppercase;
+}
+
+.tabla .boton a{
+	color: #fff;
+	text-decoration: none;	
+}
+
+.tabla .boton a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.tabla .izquierda{
+	/*float:none;*/
+	/*width: 233px;
+	min-height: 580px;
+	background: url(images/fondoizq.jpg);*/
+	margin: 0;
+	padding: 0;
+}
+
+.tabla .derecha{
+	background:#4c4c4c;	
+	margin: 0;
+}
+
+.tabla .inferior{
+	background: url(images/inferior.jpg) no-repeat;
+	width: 920px;
+	height: 109px;
+	margin: 0;
+	padding:  10px;	
+}
+
+.tabla .pie{
+	background: #6e9100;
+	padding: 5px 0;
+	text-align: center;
+	color: #fff;
+}
+
+.tabla .pie a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.tabla .pie a:hover{
+	color: #ff0;
+	text-decoration: none;
+}
+
+.tabla .cotiza{	
+	background-color:#eeeeee;
+	color: black;
+}
+
+.tabla .cotiza h1{
+	color: black;
+}
+
+.fecha {
+	color: #ff0;
+	text-align: right;
+	padding: 0px 10px 0px 0px;
+}
+
+.ferror {
+	font-size:12px;
+}
+
+.ferror .rcli {
+	font-size:12px;
+	color: #ff0;
+	text-align: justify;
+}
+
+.cleaner {	
+	clear: both;
+	height: 0px;
+}
+/**/
+.sampleStyleA {
+	background-color:#FFF;
+}
+
+.sampleStyleB {
+	background-color:#FFF;
+	font-family:monospace;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.sampleStyleC {
+	background-color:#ddffdd;
+	font-family:sans-serif;
+	font-size:10pt;
+	font-style:italic;
+}
+
+.sampleStyleD {
+	background-color:Blue;
+	color:White;
+	font-family:Arial;
+	font-size:10pt;
+}
+

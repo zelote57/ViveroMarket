@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vm", "vm\", "{8D4402F3-EE14-4A37-9BD0-36005BC0A3F5}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_32001"
+		Debug.AspNetCompiler.PhysicalPath = "vm\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32001\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_32001"
+		Release.AspNetCompiler.PhysicalPath = "vm\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32001\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "32001"
+		SlnRelativePath = "vm\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{1FB45E06-E404-4910-9757-D693C2BEBE13} = {1FB45E06-E404-4910-9757-D693C2BEBE13}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "adminvm", "adminvm\", "{1FB45E06-E404-4910-9757-D693C2BEBE13}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_32006"
+		Debug.AspNetCompiler.PhysicalPath = "adminvm\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32006\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_32006"
+		Release.AspNetCompiler.PhysicalPath = "adminvm\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32006\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "32006"
+		SlnRelativePath = "adminvm\"
+	EndProjectSection
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB", "DB\DB.sqlproj", "{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sites", "Sites", "{5390F6DD-7255-4363-AF57-5058D4135345}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D4402F3-EE14-4A37-9BD0-36005BC0A3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4402F3-EE14-4A37-9BD0-36005BC0A3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4402F3-EE14-4A37-9BD0-36005BC0A3F5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4402F3-EE14-4A37-9BD0-36005BC0A3F5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{1FB45E06-E404-4910-9757-D693C2BEBE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB45E06-E404-4910-9757-D693C2BEBE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB45E06-E404-4910-9757-D693C2BEBE13}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB45E06-E404-4910-9757-D693C2BEBE13}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F570B7D7-69D2-4912-A6C8-CC782AACA4D9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D4402F3-EE14-4A37-9BD0-36005BC0A3F5} = {5390F6DD-7255-4363-AF57-5058D4135345}
+		{1FB45E06-E404-4910-9757-D693C2BEBE13} = {5390F6DD-7255-4363-AF57-5058D4135345}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94BA767E-27B1-4DEC-A0C0-372F357D3295}
+	EndGlobalSection
+EndGlobal
